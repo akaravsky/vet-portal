@@ -1,9 +1,4 @@
-import React, {
-  createContext,
-  useState,
-  useEffect,
-  type ReactNode,
-} from "react";
+import { createContext, useState, useEffect, type ReactNode } from "react";
 import { setupInterceptors } from "../api/axios";
 
 interface AuthContextType {
