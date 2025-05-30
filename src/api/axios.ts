@@ -1,7 +1,9 @@
 import axios from "axios";
 
+const baseURL = import.meta.env.API_URL;
+
 const api = axios.create({
-  baseURL: "http://localhost:8080",
+  baseURL,
 });
 
 export const setupInterceptors = (getToken: () => string | null) => {
