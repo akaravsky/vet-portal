@@ -6,7 +6,7 @@ const api = axios.create({
   baseURL,
 });
 
-console.log("API Base URL:", baseURL);
+console.log("API Base URL updated:", baseURL);
 
 export const setupInterceptors = (getToken: () => string | null) => {
   api.interceptors.request.use((config) => {
